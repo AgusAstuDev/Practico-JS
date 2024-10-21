@@ -1,6 +1,6 @@
-// Script ejercicio 2
+// Script ejercicio 2 - Introduccion a JS
 import { sumar } from "./scripts/introduccion_js";
-// Script ejercicio 3
+// Script ejercicio 3 - Introduccion a JS
 import { promptNombre } from "./scripts/introduccion_js";
 // Script ejercicio 1 Operadores logicos
 import { valorMayor } from "./scripts/operadores_logicos";
@@ -16,27 +16,29 @@ import { esPar } from "./scripts/funciones_javascript";
 // Script ejercicio 2 Funciones de JavaScript
 import { convertirCelsiusAFahrenheit } from "./scripts/funciones_javascript";
 // Script ejercicio 1 Objetos en JavaScript
+import { persona } from "./scripts/objetos_javascript";
+import { libro } from "./scripts/objetos_javascript";
 
 // Ejercicio 2 - Introduccion
 let a = 5;
 let b = 10;
 let c = sumar(a, b);
-console.log("Ejercicio 2, resultado suma= " + c);
+console.log("Ejercicio 2 - Introduccion a JS, resultado suma= " + c);
 
 // Ejercicio 3 - Introduccion
 let nombre = promptNombre;
-console.log("Ejercicio 3= " + `Hola, ${nombre}`);
+console.log("Ejercicio 3 - Introduccion a JS= " + `Hola, ${nombre}`);
 
 // Ejercicio 1 - Operadores logicos
 let aOL = 14;
 let bOL = 7;
 let cOL = valorMayor(aOL, bOL);
-console.log("Ejercicio 1 - Op. Lógicos= " + `El valor mayor es ${cOL}`);
+console.log("Ejercicio 1 - Operadores logicos= " + `El valor mayor es ${cOL}`);
 
 // Ejercicio 2 - Operadores logicos
 let verParidad = promptNumero;
 console.log(
-  "Ejercicio 2 - Op. Lógicos= " +
+  "Ejercicio 2 - Operadores logicos= " +
     `Tu número ${verParidad} ${paridad(verParidad)}`
 );
 
@@ -46,15 +48,40 @@ console.log("Ejercicio 1 - Op. asignacion y bucles: ");
 restToZero(numberToZero);
 
 // Ejercicio 2 - Op. Asignacion y bucles
+console.log("Ejercicio 2 - Op. asignacion y bucles: ");
 let numberMoreCien = promptMoreCien();
 console.log(numberMoreCien);
 
 // Ejercicio 1 - Funciones de JavaScript
+console.log("Ejercicio 1 - Funciones de JavaScript: ");
 let valorPar = 2;
 console.log(`El número ${valorPar} es par: ` + esPar(valorPar));
 let valorImpar = 1;
 console.log(`El número ${valorImpar} es par: ` + esPar(valorImpar));
 
 // Ejercicio 2 - Funciones de JavaScript
+console.log("Ejercicio 2 - Funciones de JavaScript: ");
 let tempCelsius = 30;
 console.log(convertirCelsiusAFahrenheit(tempCelsius));
+
+// Ejecicio 1 - Objetos en JavaScript
+console.log("Ejercicio 1 - Objetos en JavaScript: ");
+let personaAna = persona;
+console.log("Nombre: " + personaAna.nombre);
+console.log("Edad: " + personaAna.edad);
+console.log("Ciudad: " + personaAna.ciudad);
+console.log("Luego de cambiar ciudad");
+personaAna.cambiarCiudad("Barcelona");
+console.log("Nombre: " + personaAna.nombre);
+console.log("Edad: " + personaAna.edad);
+console.log("Ciudad: " + personaAna.ciudad);
+
+// Ejecicio 2 - Objetos en JavaScript
+console.log("Ejercicio 2 - Objetos en JavaScript: ");
+let libroQuijote = libro;
+console.log("Nombre libro: " + libroQuijote.title);
+console.log("Autor: " + libroQuijote.autor);
+console.log("Año publicación: " + libroQuijote.year);
+console.log(
+  `El libro ${libroQuijote.title} es antiguo: ` + libroQuijote.isOld()
+);
