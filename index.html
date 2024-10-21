@@ -54,6 +54,25 @@
       <button id="deshabilitarBtn">Deshabilitar campo</button>
       <button id="habilitarBtn">Habilitar campo</button>
     </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 1 - LocalStorage</h2>
+      <form id="emailForm">
+        <label for="email">Correo electrónico:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Ingresa tu correo"
+          required
+        />
+        <button type="submit">Guardar correo</button>
+      </form>
+      <!-- Contenedor donde se mostrará el correo guardado -->
+      <div id="emailDisplay" class="email-display"></div>
+      <button id="deleteBtn" class="delete-btn" style="display: none">
+        Eliminar correo guardado
+      </button>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

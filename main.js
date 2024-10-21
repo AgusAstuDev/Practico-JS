@@ -5,8 +5,7 @@ import { promptNombre } from "./scripts/introduccion_js";
 // Script ejercicio 1 Operadores logicos
 import { valorMayor } from "./scripts/operadores_logicos";
 // Scripts ejercicio 2 Operadores logicos
-import { promptNumero } from "./scripts/operadores_logicos";
-import { paridad } from "./scripts/operadores_logicos";
+import { promptNumero, paridad } from "./scripts/operadores_logicos";
 // Script ejercicio 1 Op. de asignacion y bucles
 import { restToZero } from "./scripts/op_asignacion_bucles";
 // Script ejercicio 2 Op. de asignacion y bucles
@@ -20,8 +19,7 @@ import { persona } from "./scripts/objetos_javascript";
 // Script ejercicio 2 Objetos en JavaScript
 import { libro } from "./scripts/objetos_javascript";
 // Script ejercicio 1 Arrays
-import { numeros } from "./scripts/arrays";
-import { duplicateNumbers } from "./scripts/arrays";
+import { numeros, duplicateNumbers } from "./scripts/arrays";
 // Script ejercicio 2 Arrays
 import { bucleForArray } from "./scripts/arrays";
 // Script ejercicio 1 - Introducción al DOM
@@ -31,8 +29,13 @@ import { mostrarAlerta } from "./scripts/introduccion_DOM";
 // Script ejercicio 1 - Eventos del DOM
 import { listarEventos } from "./scripts/eventos_DOM";
 // Script ejercicio 2 - Eventos del DOM
-import { enableCamp } from "./scripts/eventos_DOM";
-import { disableCamp } from "./scripts/eventos_DOM";
+import { enableCamp, disableCamp } from "./scripts/eventos_DOM";
+// Scripts - LocaleStorage
+import {
+  displayEmail,
+  submitEvent,
+  deleteEmail,
+} from "./scripts/localstorage_ej";
 
 // Ejercicio 2 - Introduccion
 let a = 5;
@@ -139,3 +142,12 @@ deshabilitarBtn.addEventListener("click", () => {
 habilitarBtn.addEventListener("click", () => {
   enableCamp(campoTexto);
 });
+
+// Ejercicio - LocalStorage
+document.getElementById("emailForm").addEventListener("submit", submitEvent);
+
+document.getElementById("deleteBtn").addEventListener("click", () => {
+  deleteEmail();
+});
+
+window.onload = displayEmail;
