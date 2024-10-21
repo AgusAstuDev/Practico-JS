@@ -5,9 +5,55 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <style>
+      li {
+        cursor: pointer;
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hola mundo</h1>
+    <section>
+      <h2>Ejercicio 1 - Introducción al DOM</h2>
+      <p>Este es el primer párrafo.</p>
+      <p>Este es el segundo párrafo.</p>
+      <p>Este es el tercer párrafo.</p>
+      <button id="changeColorBtn">Cambiar color a azul</button>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 2 - Introducción al DOM</h2>
+      <form id="domForm">
+        <label for="inputTexto">Ingresa un texto:</label>
+        <input
+          type="text"
+          id="inputTexto"
+          name="inputTexto"
+          placeholder="Escribe aquí un mensaje..."
+        />
+        <button type="button" id="submitBtn">Mostrar alerta</button>
+      </form>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 1 - Eventos en DOM</h2>
+      <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+      </ul>
+    </section>
+    <hr />
+    <section>
+      <h2>Ejercicio 2 - Eventos en DOM</h2>
+      <input type="text" id="campoTexto" placeholder="Escribe aquí..." />
+      <button id="deshabilitarBtn">Deshabilitar campo</button>
+      <button id="habilitarBtn">Habilitar campo</button>
+    </section>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

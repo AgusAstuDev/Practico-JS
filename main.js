@@ -24,6 +24,15 @@ import { numeros } from "./scripts/arrays";
 import { duplicateNumbers } from "./scripts/arrays";
 // Script ejercicio 2 Arrays
 import { bucleForArray } from "./scripts/arrays";
+// Script ejercicio 1 - Introducción al DOM
+import { cambiarColorParrafos } from "./scripts/introduccion_DOM";
+// Script ejercicio 2 - Introducción al DOM
+import { mostrarAlerta } from "./scripts/introduccion_DOM";
+// Script ejercicio 1 - Eventos del DOM
+import { listarEventos } from "./scripts/eventos_DOM";
+// Script ejercicio 2 - Eventos del DOM
+import { enableCamp } from "./scripts/eventos_DOM";
+import { disableCamp } from "./scripts/eventos_DOM";
 
 // Ejercicio 2 - Introduccion
 let a = 5;
@@ -105,3 +114,28 @@ let parToTwenty = [];
 console.log(
   "Primeros 10 números pares: " + bucleForArray(parToTwenty).join(",")
 );
+
+// Ejercicio 1 - Introduccion al DOM
+document
+  .getElementById("changeColorBtn")
+  .addEventListener("click", cambiarColorParrafos);
+
+// Ejercicio 2 - Introduccion al DOM
+document.getElementById("submitBtn").addEventListener("click", mostrarAlerta);
+
+// Ejercicio 1 - Eventos del DOM
+let itemsLista = document.querySelectorAll("#miLista li");
+listarEventos(itemsLista);
+
+// Ejercicio 2 - Eventos del DOM
+const campoTexto = document.getElementById("campoTexto");
+const deshabilitarBtn = document.getElementById("deshabilitarBtn");
+const habilitarBtn = document.getElementById("habilitarBtn");
+
+deshabilitarBtn.addEventListener("click", () => {
+  disableCamp(campoTexto);
+});
+
+habilitarBtn.addEventListener("click", () => {
+  enableCamp(campoTexto);
+});
