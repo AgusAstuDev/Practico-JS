@@ -17,7 +17,13 @@ import { esPar } from "./scripts/funciones_javascript";
 import { convertirCelsiusAFahrenheit } from "./scripts/funciones_javascript";
 // Script ejercicio 1 Objetos en JavaScript
 import { persona } from "./scripts/objetos_javascript";
+// Script ejercicio 2 Objetos en JavaScript
 import { libro } from "./scripts/objetos_javascript";
+// Script ejercicio 1 Arrays
+import { numeros } from "./scripts/arrays";
+import { duplicateNumbers } from "./scripts/arrays";
+// Script ejercicio 2 Arrays
+import { bucleForArray } from "./scripts/arrays";
 
 // Ejercicio 2 - Introduccion
 let a = 5;
@@ -84,4 +90,18 @@ console.log("Autor: " + libroQuijote.autor);
 console.log("Año publicación: " + libroQuijote.year);
 console.log(
   `El libro ${libroQuijote.title} es antiguo: ` + libroQuijote.isOld()
+);
+
+// Ejecicio 1 - Arrays
+console.log("Ejercicio 1 - Arrays: ");
+console.log("Números originales: " + numeros.join(","));
+let numerosOriginales = numeros;
+let numerosMultiplicados = duplicateNumbers(numerosOriginales);
+console.log("Números duplicados: " + numerosMultiplicados.join(","));
+
+// Ejecicio 2 - Arrays
+console.log("Ejercicio 2 - Arrays: ");
+let parToTwenty = [];
+console.log(
+  "Primeros 10 números pares: " + bucleForArray(parToTwenty).join(",")
 );
