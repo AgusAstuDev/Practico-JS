@@ -1,4 +1,4 @@
-# API REST - Inicial
+# JavaScript - Inicial
 
 ## Descripción
 
