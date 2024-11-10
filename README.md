@@ -17,7 +17,7 @@ Este proyecto frontend está desarrollado en JavaScript vanilla, con un enfoque 
 - Operadores básicos
 ## Instrucciones de Uso
 
-1. Clonar o descargar el repositorio: [Descargar Practico-JS.zip](https://github.dev/AgusAstuDev/Practico-JS/archive/refs/heads/main.zip)
+1. Clonar o descargar el repositorio: [Descargar Practico-JS.zip](https://github.com/AgusAstuDev/Practico-JS/archive/refs/heads/main.zip)
 2. Abrir proyecto con VSC, instalar la extensión Live Server, selecciona "Open with Live Server". 
 3. Se abrirá el archivo en tu navegador y se actualizará automáticamente.
 
